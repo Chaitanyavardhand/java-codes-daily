@@ -1,0 +1,265 @@
+//week 1 day1
+//q1
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+
+public class Solution {
+
+    public static void main(String[] args) {
+Scanner obj=new Scanner(System.in);
+int a,b;
+a=obj.nextInt();
+b=obj.nextInt();
+        if(a>0&&b>0)
+        {
+            System.out.println(a+"-"+b);
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        
+    }
+}
+//week1 day1
+//q2
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+public static void main(String[] args) {
+Scanner obj=new Scanner(System.in);
+int a,b,d,e;
+float c;    
+a=obj.nextInt();
+b=obj.nextInt();
+d=obj.nextInt();
+    if((a>1&&a<1000)&&(b>1&&b<1000)&&(d>1&&d<1000))
+    {
+        c=(float)(a+b+d)/3;
+        c=c*10;
+        e=(int)c;
+        c=(float)e/10;
+        System.out.println(c);
+    }
+    
+    else
+    {            System.out.println("Invalid Input");
+}
+    
+}
+}
+//week1 day 2
+//q1
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+Scanner obj=new Scanner(System.in);
+int s1=obj.nextInt();
+int i,flag=0;
+for(i=2;i<=s1-1;i++)
+{ 
+  if(s1%i==0)
+  {
+      System.out.println("Not Prime Number");
+      flag=1;
+   break;
+  }
+  
+}
+if((s1==1)||(s1==2))
+{
+System.out.println("Prime Number");
+}
+if(flag==0)
+{
+System.out.println("Prime Number");
+}
+        
+    }
+}
+//week 1day 2
+//q2
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        int c=obj.nextInt();
+        if((a>0&&a<1000)&&(b>0&&b<1000)&&(c>0&c<1000))
+        {
+        
+        for(int i =a;i<=b;i++)
+        {
+            if(i%c==0)
+            {
+                System.out.print(i);
+                                 System.out.print(" ");
+
+            }
+        }
+    }
+        else
+        {
+                            System.out.println("NO OUTPUT");
+
+        }
+}}
+//week 1 day 3
+//q1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.*;
+
+public  class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        long n=obj.nextLong();
+        obj.nextLine();
+        String name=obj.nextLine();
+        char gender=obj.next().charAt(0);
+        obj.nextLine();
+        int b=obj.nextInt();
+        
+        if(b>=20000)
+        {
+            if(gender=='F')
+            {
+                System.out.println("Hi Ms. "+name+"!");
+                System.out.println("Insufficient Funds! You can not withdraw "+b+".");
+            }
+           if(gender=='M')
+            {
+                System.out.println("Hi Mr. "+name+"!");
+                System.out.println("Insufficient Funds! You can not withdraw "+b+".");
+            }
+        }
+        else
+        {
+            if(gender=='F')
+            {
+                System.out.println("Hi Ms. "+name+"!");
+                System.out.println("Your Account Balance after withdrawl is "+(20000-b)+".");
+            }
+            if(gender=='M')
+            {
+                System.out.println("Hi Mr. "+name+"!");
+                System.out.println("Your Account Balance after withdrawl is "+(20000-b)+".");
+            }
+        }
+    }
+}
+//q2
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner obj = new Scanner(System.in);
+        int n=obj.nextInt();
+        int flag=0;
+        if(n>0&&n<1000)
+        {
+            for(int i=0;i<n;i++)
+            {
+                if(i*i*i==n)
+                {
+                    
+                        System.out.println("Perfect Cube");
+                    flag=1;
+                    
+                    }
+                }
+            if(flag==0)
+            {
+                
+        
+         System.out.println("Not Perfect Cube")   ;
+        
+            }
+            
+            }
+        
+     }
+}
+//week1 day4
+//q1
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        int c=(a*4)+(b*6);
+        System.out.println(c);
+    }
+}
+//q2
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.*;
+
+public  class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        long n=obj.nextLong();
+        obj.nextLine();
+        String name=obj.nextLine();
+        char gender=obj.next().charAt(0);
+        obj.nextLine();
+        int b=obj.nextInt();
+        
+        if(b>=20000)
+        {
+            if(gender=='F')
+            {
+                System.out.println("Hi Ms. "+name+"!");
+                System.out.println("Insufficient Funds! You can not withdraw "+b+".");
+            }
+           if(gender=='M')
+            {
+                System.out.println("Hi Mr. "+name+"!");
+                System.out.println("Insufficient Funds! You can not withdraw "+b+".");
+            }
+        }
+        else
+        {
+            if(gender=='F')
+            {
+                System.out.println("Hi Ms. "+name+"!");
+                System.out.println("Your Account Balance after withdrawl is "+(20000-b)+".");
+            }
+            if(gender=='M')
+            {
+                System.out.println("Hi Mr. "+name+"!");
+                System.out.println("Your Account Balance after withdrawl is "+(20000-b)+".");
+            }
+        }
+    }
+}
+
