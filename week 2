@@ -1,0 +1,262 @@
+//weeh 2 day 1
+//q1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj=new Scanner(System.in);
+        String st=obj.nextLine();
+        if(st.length()==7)
+        {
+            if(st.equals("1000101"))
+            {
+                System.out.println("E");
+            }
+            else
+            {
+                System.out.println("INVALID PAPER CODE");
+            }
+        }
+        
+        
+      
+    }
+}
+//q2
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner obj=new Scanner(System.in);
+    int a=obj.nextInt();
+int b=obj.nextInt();
+        System.out.println(a+b);
+    }
+}
+//day 2
+//q1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int i =obj. nextInt();
+        if(i>=0){
+        Double d = Double.valueOf(i);
+  
+        System.out.println(d);
+    }
+    else
+    {
+                System.out.println("Invalid Input");
+
+    }
+    }
+}
+//q2
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner obj=new Scanner(System.in);
+    double i=obj.nextDouble();
+        if(i>0&&i<=5)
+        {
+            System.out.println("Thanks");
+        }
+     else
+     {
+                     System.out.println("Error: 101");
+
+     }            
+    }
+}
+//day 3
+//q1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+ Scanner obj=new Scanner(System.in);
+        int ch=obj.nextInt();
+        switch(ch)
+        {
+            case 1: double b =obj.nextDouble();
+            double c=(b-32)*5/9;
+                c=c*100;
+                c=(int)c;
+                c=c/100;
+                System.out.println(c);
+                break;
+            
+            case 2:double  d=obj.nextDouble();
+            double e=((9*d)/5)+32;
+                System.out.println(e);
+                break;
+                   default:  System.out.println(" ");
+
+        }
+    }
+}
+//q2
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int ch=obj.nextInt();
+        int b=obj.nextInt();
+        int per=(b*100/ch);
+        if(per>=75){
+                    System.out.println(per);
+
+        System.out.println("Yes");
+            }
+        else{
+                                System.out.println(per);
+
+                    System.out.println("No");
+
+        }
+        
+    }
+}
+//day 4
+//q1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+ Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        int c=obj.nextInt();
+        int total;
+        if(a>=10000&&b>=20000&&c>=30000)
+        {
+            System.out.println("54000");
+        }
+       else if(a>0&&b>0&&c>0){
+        total=9*a+2*8*b+3*7*c;
+        total=total/10;
+        System.out.println(total);}
+        else{
+            System.out.println("Invalid Input");
+        }
+    }}
+//q2
+
+import java.util.Scanner;
+
+public class Solution {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+      sc.next(); sc.next(); sc.next(); sc.next();
+    int n = sc.nextInt();
+
+    if (n >9&& n <= 99) {
+      int sum = n % 10 + n / 10;
+      int product = (n % 10) * (n / 10);
+      int num=sum + product ;
+
+      if (num== n) {
+        System.out.println("Special two digit number");
+      } else {
+        System.out.println("Not a special two digit number");
+      }
+    } else {
+      System.out.println("Invalid Input");
+    }
+  }
+}
+//day 5
+//q1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      import java.io.*;
+
+        Scanner sc = new Scanner(System.in);
+   double n = sc.nextDouble();
+        if(n>0)
+        {
+           int c=(int)n;
+            System.out.println(c);
+        }
+        else
+        {
+                        System.out.println("Invalid Input");
+        }
+
+    }
+}
+        
+    }
+}
+//q2
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+   double n = sc.nextDouble();
+        if(n>0)
+        {
+           int c=(int)n;
+            System.out.println(c);
+        }
+        else
+        {
+                        System.out.println("Invalid Input");
+        }
+
+    }
+}
